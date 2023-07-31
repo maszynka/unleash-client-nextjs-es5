@@ -9,7 +9,9 @@
     "paths": {
       "baseUrl": ["."],
       "./src/*": ["./dist/*"]
-    }
+    },
+    "target": "ES5"
   },
+  
   "include": ["client.ts"]
 }

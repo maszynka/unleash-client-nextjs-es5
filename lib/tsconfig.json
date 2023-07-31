@@ -7,7 +7,8 @@
     "resolveJsonModule": true,
     "alwaysStrict": false,
     "noImplicitUseStrict": true,
-    "ignoreDeprecations": "5.0"
+    "ignoreDeprecations": "5.0",
+    "target": "ES5"
   },
   "include": ["src"],
   "exclude": ["dist", "build", "node_modules"]
