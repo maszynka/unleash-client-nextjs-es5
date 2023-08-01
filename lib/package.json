@@ -1,7 +1,7 @@
 {
-  "name": "@unleash/nextjs",
-  "version": "1.1.0",
-  "description": "Unleash SDK for Next.js",
+  "name": "@wakacje/ab-test-nextjs-client",
+  "version": "1.1.0-1",
+  "description": "Currently for of Unleash SDK for Next.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "Apache-2.0",

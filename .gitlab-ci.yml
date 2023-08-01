@@ -1,0 +1,30 @@
+stages:
+  - test
+  - push
+
+tests:
+  stage: test
+  image: node:latest
+  tags:
+    - docker
+  before_script:
+    - npm install
+    - rm -rf lib/
+  script:
+    - npm run test:coverage
+
+nexus_push:
+  stage: push
+  image: node:16.10.0
+  tags:
+    - docker
+  only:
+    - tags
+  before_script:
+    - yarn install --ignore-engines
+    - npm config set registry https://nexus-rm.grupawp.pl/repository/wakacje-npm
+    - echo '//nexus-rm.grupawp.pl/repository/wakacje-npm/:_authToken=${NEXUS_AUTH_TOKEN}'>.npmrc
+  script:
+    - cd lib
+    - npm publish
+

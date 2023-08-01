@@ -1,3 +1,12 @@
+Wakacje.pl Unleash Next.js SDK fork
+
+For now it's 1:1 fork with changed target (and single type fix) but in case of ab testing provider this tool could re-use it's api and provide support for another service provider (like VWO).
+
+#
+Versioning:
+1.1.0-1
+1.1.0 - Corresponding Unleash Next.js SDK version
+-1 - version based on top of original Unleash one
 # Unleash Next.js SDK
 
 This package allows easy integration of [Unleash](https://github.com/unleash/unleash) feature flags in a [Next.js](https://nextjs.org/) application.

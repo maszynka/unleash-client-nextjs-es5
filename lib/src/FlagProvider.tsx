@@ -8,6 +8,7 @@ type Config = Required<ComponentProps<typeof ReactFlagProvider>>["config"];
 
 type FlagProviderProps = {
   config?: Partial<Config>;
+  children: React.ReactNode;
 } & Omit<ComponentProps<typeof ReactFlagProvider>, "config">;
 
 export const FlagProvider: FC<FlagProviderProps> = ({ children, ...props }) => (
